@@ -7,6 +7,21 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     protected $dates = ['published_at'];
+    protected $fillable = [
+        'title', 'subtitle', 'content_raw', 'page_image', 'meta_description', 'layout', 'is_draft', 'published_at',
+    ];
+
+    public function getPublishDateAttribute($value) {
+        return $this->published_at->format('M-j-Y');
+    }
+
+    public function getPublishTimeAttribute($value) {
+        return $this->published_at->format('g:i A');
+    }
+
+    public function getContentAttribute($value) {
+        return $this->content_raw;
+    }
 
     public function tags() {
         return $this->belongsToMany('App\Tag', 'post_tag_pivot');
