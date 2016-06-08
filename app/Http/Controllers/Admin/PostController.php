@@ -49,8 +49,7 @@ class PostController extends Controller
         return redirect()->route('admin.post.index')->withSuccess('Modification enregistrée.');
     }
 
-    public function destroy($id)
-    {
+    public function destroy($id) {
         $post = Post::findOrFail($id);
         $post->tags()->detach();
         $post->delete();
