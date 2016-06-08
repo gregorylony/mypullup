@@ -3,7 +3,7 @@
     @if (Auth::check())
     <li @if (Request::is('admin/post*')) class="active" @endif><a href="/admin/post">Articles</a></li>
     <li @if (Request::is('admin/tag*')) class="active" @endif><a href="/admin/tag">Tags</a></li>
-    <li @if (Request::is('admin/upload*')) class="active" @endif><a href="/admin/tag">Uploads</a></li>
+    <li @if (Request::is('admin/upload*')) class="active" @endif><a href="/admin/upload">Uploads</a></li>
     @endif
 </ul>
 
