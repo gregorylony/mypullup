@@ -2,7 +2,7 @@
 
 namespace App;
 
-use App\Services\Markdowner;
+use GrahamCampbell\Markdown\Facades\Markdown;
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
@@ -48,10 +48,8 @@ class Post extends Model
     }
 
     public function setContentRawAttribute($value) {
-        $markdown = new Markdowner();
-
         $this->attributes['content_raw'] = $value;
-        $this->attributes['content_html'] = $markdown->toHTML($value);
+        $this->attributes['content_html'] = Markdown::convertToHtml($value);
     }
 
     public function syncTags(array $tags) {
