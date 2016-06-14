@@ -4,11 +4,11 @@
   <div class="container-fluid">
     <div class="row page-title-row">
       <div class="col-md-6">
-        <h3>Tags <small>» Listing</small></h3>
+        <h3>Tags <small>» Liste</small></h3>
       </div>
       <div class="col-md-6 text-right">
         <a href="/admin/tag/create" class="btn btn-success btn-md">
-          <i class="fa fa-plus-circle"></i> New Tag
+          <i class="fa fa-plus-circle"></i> Nouveau tag
         </a>
       </div>
     </div>
@@ -23,9 +23,9 @@
           <thead>
           <tr>
             <th>Tag</th>
-            <th>Title</th>
-            <th class="hidden-sm">Subtitle</th>
-            <th class="hidden-md">Page Image</th>
+            <th>Titre</th>
+            <th class="hidden-sm">Sous-titre</th>
+            <th class="hidden-md">Image</th>
             <th class="hidden-md">Meta Description</th>
             <th class="hidden-md">Layout</th>
             <th class="hidden-sm">Direction</th>
@@ -51,7 +51,7 @@
               <td>
                 <a href="/admin/tag/{{ $tag->id }}/edit"
                    class="btn btn-xs btn-info">
-                  <i class="fa fa-edit"></i> Edit
+                  <i class="fa fa-edit"></i> Editer
                 </a>
               </td>
             </tr>

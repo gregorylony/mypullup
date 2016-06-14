@@ -12,7 +12,7 @@
       <div class="col-md-8 col-md-offset-2">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">New Tag Form</h3>
+            <h3 class="panel-title">Formulaire de création de tag</h3>
           </div>
           <div class="panel-body">
 
@@ -36,7 +36,7 @@
                 <div class="col-md-7 col-md-offset-3">
                   <button type="submit" class="btn btn-primary btn-md">
                     <i class="fa fa-plus-circle"></i>
-                      Add New Tag
+                      Ajouter
                   </button>
                 </div>
               </div>

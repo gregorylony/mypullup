@@ -2,7 +2,7 @@
   <div class="col-md-8">
     <div class="form-group">
       <label for="title" class="col-md-2 control-label">
-        Title
+        Titre
       </label>
       <div class="col-md-10">
         <input type="text" class="form-control" name="title" autofocus
@@ -11,7 +11,7 @@
     </div>
     <div class="form-group">
       <label for="subtitle" class="col-md-2 control-label">
-        Subtitle
+        Sous-titre
       </label>
       <div class="col-md-10">
         <input type="text" class="form-control" name="subtitle"
@@ -20,7 +20,7 @@
     </div>
     <div class="form-group">
       <label for="page_image" class="col-md-2 control-label">
-        Page Image
+        Image
       </label>
       <div class="col-md-10">
         <div class="row">
@@ -58,7 +58,7 @@
     </div>
     <div class="form-group">
       <label for="content" class="col-md-2 control-label">
-        Content
+        Contenu
       </label>
       <div class="col-md-10">
         <textarea class="form-control" name="content" rows="14"
@@ -69,7 +69,7 @@
   <div class="col-md-4">
     <div class="form-group">
       <label for="publish_date" class="col-md-3 control-label">
-        Pub Date
+        Date de publication
       </label>
       <div class="col-md-8">
         <input class="form-control" name="publish_date" id="publish_date"
@@ -78,7 +78,7 @@
     </div>
     <div class="form-group">
       <label for="publish_time" class="col-md-3 control-label">
-        Pub Time
+        Heure de publication
       </label>
       <div class="col-md-8">
         <input class="form-control" name="publish_time" id="publish_time"
@@ -90,7 +90,7 @@
         <div class="checkbox">
           <label>
             <input {{ checked($is_draft) }} type="checkbox" name="is_draft">
-            Draft?
+            Brouillon ?
           </label>
         </div>
       </div>
@@ -124,9 +124,8 @@
         Meta
       </label>
       <div class="col-md-8">
-        <textarea class="form-control" name="meta_description"
-                  id="meta_description"
-                  rows="6">{{ $meta_description }}</textarea>
+        <textarea class="form-control" name="meta_description" id="meta_description" rows="6">
+        {{ $meta_description }}</textarea>
       </div>
     </div>
 

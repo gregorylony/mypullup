@@ -19,12 +19,12 @@
         @include('admin.partials.errors')
         @include('admin.partials.success')
 
-        <table id="posts-table" class="table table-striped table-bordered">
+        <table id="posts-table" class="table table-hover table-striped table-bordered">
           <thead>
             <tr>
-              <th>Published</th>
-              <th>Title</th>
-              <th>Subtitle</th>
+              <th>Publié le</th>
+              <th>Titre</th>
+              <th>Sous-titre</th>
               <th data-sortable="false">Actions</th>
             </tr>
           </thead>
@@ -39,11 +39,11 @@
                 <td>
                   <a href="/admin/post/{{ $post->id }}/edit"
                      class="btn btn-xs btn-info">
-                    <i class="fa fa-edit"></i> Edit
+                    <i class="fa fa-edit"></i> Editer
                   </a>
                   <a href="/blog/{{ $post->slug }}"
                      class="btn btn-xs btn-warning">
-                    <i class="fa fa-eye"></i> View
+                    <i class="fa fa-eye"></i> Voir
                   </a>
                 </td>
               </tr>

@@ -27,3 +27,13 @@ $factory->define(App\Post::class, function (Faker\Generator $faker) {
         'published_at' => $faker->dateTimeBetween('-1 month', '+3 days'),
     ];
 });
+
+$factory->define(App\Artist::class, function (Faker\Generator $faker) {
+  return [
+    'name' => $faker->name,
+    'phone' => str_random(10),
+    'email' => $faker->safeEmail,
+    'image' => str_random(15),
+    'created_at' => $faker->dateTimeBetween('-1 month', '+3 days'),
+  ];
+});

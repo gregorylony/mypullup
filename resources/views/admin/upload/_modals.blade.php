@@ -10,12 +10,12 @@
           <button type="button" class="close" data-dismiss="modal">
             ×
           </button>
-          <h4 class="modal-title">Create New Folder</h4>
+          <h4 class="modal-title">Créer un nouveau dossier</h4>
         </div>
         <div class="modal-body">
           <div class="form-group">
             <label for="new_folder_name" class="col-sm-3 control-label">
-              Folder Name
+              Nom du dossier
             </label>
             <div class="col-sm-8">
               <input type="text" id="new_folder_name" name="new_folder"
@@ -25,10 +25,10 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">
-            Cancel
+            Annuler
           </button>
           <button type="submit" class="btn btn-primary">
-            Create Folder
+            Créer le dossier
           </button>
         </div>
       </form>
@@ -44,14 +44,14 @@
         <button type="button" class="close" data-dismiss="modal">
           ×
         </button>
-        <h4 class="modal-title">Please Confirm</h4>
+        <h4 class="modal-title">Merci de confirmer</h4>
       </div>
       <div class="modal-body">
         <p class="lead">
-          <i class="fa fa-question-circle fa-lg"></i>  
-          Are you sure you want to delete the
-          <kbd><span id="delete-file-name1">file</span></kbd>
-          file?
+          <i class="fa fa-question-circle fa-lg"></i>
+          Es-tu certain de vouloir supprimer le
+          <kbd><span id="delete-file-name1">fichier</span></kbd>
+          fichier?
         </p>
       </div>
       <div class="modal-footer">
@@ -61,10 +61,10 @@
           <input type="hidden" name="folder" value="{{ $folder }}">
           <input type="hidden" name="del_file" id="delete-file-name2">
           <button type="button" class="btn btn-default" data-dismiss="modal">
-            Cancel
+            Annuler
           </button>
           <button type="submit" class="btn btn-danger">
-            Delete File
+            Supprimer le fichier
           </button>
         </form>
       </div>
@@ -84,10 +84,10 @@
       </div>
       <div class="modal-body">
         <p class="lead">
-          <i class="fa fa-question-circle fa-lg"></i>  
-          Are you sure you want to delete the
-          <kbd><span id="delete-folder-name1">folder</span></kbd>
-          folder?
+          <i class="fa fa-question-circle fa-lg"></i>
+          Es-tu certain de vouloir supprimer le
+          <kbd><span id="delete-folder-name1">dossier</span></kbd>
+          dossier?
         </p>
       </div>
       <div class="modal-footer">
@@ -97,10 +97,10 @@
           <input type="hidden" name="folder" value="{{ $folder }}">
           <input type="hidden" name="del_folder" id="delete-folder-name2">
           <button type="button" class="btn btn-default" data-dismiss="modal">
-            Cancel
+            Annuler
           </button>
           <button type="submit" class="btn btn-danger">
-            Delete Folder
+            Supprimer
           </button>
         </form>
       </div>
@@ -120,12 +120,12 @@
           <button type="button" class="close" data-dismiss="modal">
             ×
           </button>
-          <h4 class="modal-title">Upload New File</h4>
+          <h4 class="modal-title">Envoi de nouveau fichier</h4>
         </div>
         <div class="modal-body">
           <div class="form-group">
             <label for="file" class="col-sm-3 control-label">
-              File
+              Fichier
             </label>
             <div class="col-sm-8">
               <input type="file" id="file" name="file">
@@ -133,7 +133,7 @@
           </div>
           <div class="form-group">
             <label for="file_name" class="col-sm-3 control-label">
-              Optional Filename
+              Nom optionnel
             </label>
             <div class="col-sm-4">
               <input type="text" id="file_name" name="file_name"
@@ -143,10 +143,10 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">
-            Cancel
+            Annuler
           </button>
           <button type="submit" class="btn btn-primary">
-            Upload File
+            Envoyer
           </button>
         </div>
       </form>
@@ -162,14 +162,14 @@
         <button type="button" class="close" data-dismiss="modal">
           ×
         </button>
-        <h4 class="modal-title">Image Preview</h4>
+        <h4 class="modal-title">Prévisualisation</h4>
       </div>
       <div class="modal-body">
         <img id="preview-image" src="x" class="img-responsive">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">
-          Cancel
+          Annuler
         </button>
       </div>
     </div>

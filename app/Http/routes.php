@@ -28,6 +28,7 @@ Route::group([
 ], function () {
     Route::resource('admin/post', 'PostController');
     Route::resource('admin/tag', 'TagController', ['except' => 'show']);
+    Route::resource('admin/artist', 'ArtistController');
     Route::get('admin/upload', 'UploadController@index');
     Route::post('admin/upload/file', 'UploadController@uploadFile');
     Route::delete('admin/upload/file', 'UploadController@deleteFile');

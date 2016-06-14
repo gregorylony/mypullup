@@ -19,7 +19,7 @@
       <div class="col-md-6 text-right">
         <button type="button" class="btn btn-success btn-md"
                 data-toggle="modal" data-target="#modal-folder-create">
-          <i class="fa fa-plus-circle"></i> New Folder
+          <i class="fa fa-plus-circle"></i> Nouveau dossier
         </button>
         <button type="button" class="btn btn-primary btn-md"
                 data-toggle="modal" data-target="#modal-file-upload">
@@ -37,10 +37,10 @@
         <table id="uploads-table" class="table table-striped table-bordered">
           <thead>
             <tr>
-              <th>Name</th>
+              <th>Nom</th>
               <th>Type</th>
               <th>Date</th>
-              <th>Size</th>
+              <th>Taille</th>
               <th data-sortable="false">Actions</th>
             </tr>
           </thead>
@@ -62,7 +62,7 @@
       <button type="button" class="btn btn-xs btn-danger"
               onclick="delete_folder('{{ $name }}')">
         <i class="fa fa-times-circle fa-lg"></i>
-        Delete
+        Supprimer
       </button>
     </td>
   </tr>
@@ -88,13 +88,13 @@
       <button type="button" class="btn btn-xs btn-danger"
               onclick="delete_file('{{ $file['name'] }}')">
         <i class="fa fa-times-circle fa-lg"></i>
-        Delete
+        Supprimer
       </button>
       @if (is_image($file['mimeType']))
         <button type="button" class="btn btn-xs btn-success"
                 onclick="preview_image('{{ $file['webPath'] }}')">
           <i class="fa fa-eye fa-lg"></i>
-          Preview
+          Prévisualiser
         </button>
       @endif
     </td>

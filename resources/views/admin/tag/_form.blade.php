@@ -1,6 +1,6 @@
 <div class="form-group">
   <label for="title" class="col-md-3 control-label">
-    Title
+    Titre
   </label>
   <div class="col-md-8">
     <input type="text" class="form-control" name="title"
@@ -10,7 +10,7 @@
 
 <div class="form-group">
   <label for="subtitle" class="col-md-3 control-label">
-    Subtitle
+    Sous-titre
   </label>
   <div class="col-md-8">
     <input type="text" class="form-control" name="subtitle"
@@ -32,7 +32,7 @@
 
 <div class="form-group">
   <label for="page_image" class="col-md-3 control-label">
-    Page Image
+    Image
   </label>
   <div class="col-md-8">
     <input type="text" class="form-control" name="page_image"

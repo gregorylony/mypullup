@@ -12,7 +12,7 @@
   <div class="container-fluid">
     <div class="row page-title-row">
       <div class="col-md-12">
-        <h3>Posts <small>» Edit Post</small></h3>
+        <h3>Articles <small>» Edition</small></h3>
       </div>
     </div>
 
@@ -20,7 +20,7 @@
       <div class="col-sm-12">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <h3 class="panel-title">Post Edit Form</h3>
+            <h3 class="panel-title">Formulaire d'édition d'article</h3>
           </div>
           <div class="panel-body">
 
@@ -40,17 +40,17 @@
                     <button type="submit" class="btn btn-primary btn-lg"
                             name="action" value="continue">
                       <i class="fa fa-floppy-o"></i>
-                      Save - Continue
+                      Enregistrer - Continuer
                     </button>
                     <button type="submit" class="btn btn-success btn-lg"
                             name="action" value="finished">
                       <i class="fa fa-floppy-o"></i>
-                      Save - Finished
+                      Enregistrer - Terminer
                     </button>
                     <button type="button" class="btn btn-danger btn-lg"
                             data-toggle="modal" data-target="#modal-delete">
                       <i class="fa fa-times-circle"></i>
-                      Delete
+                      Supprimer
                     </button>
                   </div>
                 </div>
@@ -71,12 +71,12 @@
             <button type="button" class="close" data-dismiss="modal">
               ×
             </button>
-            <h4 class="modal-title">Please Confirm</h4>
+            <h4 class="modal-title">Merci de confirmer</h4>
           </div>
           <div class="modal-body">
             <p class="lead">
               <i class="fa fa-question-circle fa-lg"></i>
-              Are you sure you want to delete this post?
+              Es-tu certain de vouloir supprimer cet article ?
             </p>
           </div>
           <div class="modal-footer">
@@ -84,9 +84,9 @@
               <input type="hidden" name="_token" value="{{ csrf_token() }}">
               <input type="hidden" name="_method" value="DELETE">
               <button type="button" class="btn btn-default"
-                      data-dismiss="modal">Close</button>
+                      data-dismiss="modal">Fermer</button>
               <button type="submit" class="btn btn-danger">
-                <i class="fa fa-times-circle"></i> Yes
+                <i class="fa fa-times-circle"></i> Oui
               </button>
             </form>
           </div>
