@@ -4,6 +4,7 @@
     <li @if (Request::is('admin/post*')) class="active" @endif><a href="/admin/post">Articles</a></li>
     <li @if (Request::is('admin/tag*')) class="active" @endif><a href="/admin/tag">Tags</a></li>
     <li @if (Request::is('admin/upload*')) class="active" @endif><a href="/admin/upload">Uploads</a></li>
+    <li @if (Request::is('admin/artists*')) class="active" @endif><a href="/admin/upload">Artistes</a></li>
     @endif
 </ul>
 

@@ -11,7 +11,7 @@
         <h1 class="page-header">{{ $post->title }}</h1>
         <h5>{{ $post->published_at->format('j M Y g:ia')}}</h5>
 
-        {!! nl2br(e($post->content)) !!}
+        {!! $post->content_html !!}
 
         <hr>
 

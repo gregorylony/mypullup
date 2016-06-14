@@ -20,7 +20,7 @@
                 <em>({{ $post->published_at->format('j M Y g:ia')}})</em>
 
                 <p>
-                    {{ str_limit($post->content)}}
+                    {{ str_limit($post->content) }}
                 </p>
             </li>
             @endforeach
